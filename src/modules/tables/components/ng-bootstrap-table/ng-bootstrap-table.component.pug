@@ -1,6 +1,6 @@
 form
     .form-group.form-inline
-        | Full text search: 
+        | Buscar: 
         input.form-control.ml-2(
             type='text',
             name='searchTerm',
@@ -16,7 +16,7 @@ form
                     sbSortable='name',
                     (sort)='onSort($event)'
                 ) 
-                    span Country
+                    span Pais
                     sb-sort-icon(
                         *ngIf='sortedColumn === "name"',
                         [direction]='sortedDirection'
@@ -36,7 +36,7 @@ form
                     sbSortable='population',
                     (sort)='onSort($event)'
                 ) 
-                    span Population
+                    span Poblacion
                     sb-sort-icon(
                         *ngIf='sortedColumn === "population"',
                         [direction]='sortedDirection'
