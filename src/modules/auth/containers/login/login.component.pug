@@ -9,17 +9,17 @@ sb-layout-auth
                         form
                             .form-group
                                 label.small.mb-1(for='inputEmailAddress') Email
-                                input#inputEmailAddress.form-control.py-4(type='email', placeholder='Enter email address')
+                                input#inputEmailAddress.form-control.py-4(type='email', placeholder='Introduzca su direccion de e-mail')
                             .form-group
                                 label.small.mb-1(for='inputPassword') Password
-                                input#inputPassword.form-control.py-4(type='password', placeholder='Enter password')
+                                input#inputPassword.form-control.py-4(type='password', placeholder='Introduzca su clave')
                             .form-group
                                 .custom-control.custom-checkbox
                                     input#rememberPasswordCheck.custom-control-input(type='checkbox')
-                                    label.custom-control-label(for='rememberPasswordCheck') Remember password
+                                    label.custom-control-label(for='rememberPasswordCheck') Recordar clave
                             .form-group.d-flex.align-items-center.justify-content-between.mt-4.mb-0
-                                a.small(routerLink='/auth/forgot-password') Forgot Password?
+                                a.small(routerLink='/auth/forgot-password') Olvido su clave?
                                 a.btn.btn-primary(routerLink='/dashboard') Login
                     .card-footer.text-center
                         .small
-                            a(routerLink='/auth/register') Need an account? Sign up!
+                            a(routerLink='/auth/register') Necesita una cuenta? Regístrese!
